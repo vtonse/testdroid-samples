@@ -81,9 +81,9 @@ class TestdroidTestRunner():
             os.environ[key] = str(self.variables[key])
 
     def print_values(self):
-        print "Stored environment variables:"
+        print ("Stored environment variables:")
         for key in self.variables.keys():
-            print "  {} : {}".format(key, os.environ.get(key, 'Not set'))
+            print ("  {} : {}".format(key, os.environ.get(key, 'Not set')))
 
     def run_selected_test(self):
         module = importlib.import_module(self.selected_test)
