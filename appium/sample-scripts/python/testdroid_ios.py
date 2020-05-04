@@ -62,7 +62,7 @@ class TestdroidIOS(unittest.TestCase):
             while testdroid_device == "":
                 testdroid_device = deviceFinder.available_ios_device()
 
-        print "Starting Appium test using device '%s'" % testdroid_device
+        print ("Starting Appium test using device '%s'" % testdroid_device)
 
         desired_capabilities_cloud = {}
         desired_capabilities_cloud['testdroid_apiKey'] = testdroid_apiKey
