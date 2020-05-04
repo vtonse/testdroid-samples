@@ -23,6 +23,8 @@ class UploadApp():
         parser.add_argument('-k', '--apikey', type=str, required=False, help="User's apiKey to identify to cloud, or set environment variable TESTDROID_APIKEY".format(self.api_key))
         parser.add_argument('-a', '--app_path', type=str, required=False, help="Path to app to upload or set environment variable TESTDROID_APP_PATH. Current value is: '{}'".format(self.myfile))
         parser.add_argument('-u', '--url', type=str, required=False, help="Testdroid Cloud url to upload app or set environment variable TESTDROID_UPLOAD_URL. Current value is: '{}'".format(self.upload_url))
+        
+        print "api_key"
 
         args = parser.parse_args()
         if args.app_path:
