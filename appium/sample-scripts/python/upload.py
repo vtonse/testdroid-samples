@@ -50,9 +50,9 @@ class UploadApp():
         r = requests.post(self.upload_url, files=files, headers=self.build_headers())
 
         try:
-            print "File id to use in testdroid capabilities in your test: {}".format(r.json()['id'])
+            print ("File id to use in testdroid capabilities in your test: {}".format(r.json()['id']))
         except ValueError:
-            print "Upload response: \n{}".format(r)
+            print ("Upload response: \n{}".format(r))
 
 
 if __name__ == '__main__':
